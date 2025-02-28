@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "TT Chocolates Extra light";
+  src:
+    url("../fonts/TT\ Chocolates\ Trial\ ExtraLight.otf") format("otf");  
+} 
+  
+@font-face {
+  font-family: "TT Chocolates Medium";
+  src:
+    url("../fonts/TT\ Chocolates\ Trial\ Medium.otf") format("otf");
+} 
+  
+@font-face {
+  font-family: "TT Chocolates Semibold";
+  src:
+    url("../fonts/TT\ Chocolates\ Trial\ DemiBold.otf.otf") format("otf");
+} 
+  
+@font-face {
+  font-family: "TT Chocolates Bold";
+  src:
+    url("../fonts/TT\ Chocolates\ Trial\ Bold.otf.otf") format("otf");
+} 
+
+@font-face {
+  font-family: "TT Chocolates Extra bold";
+  src:
+    url("../fonts/TT\ Chocolates\ Trial\ ExtraBold.otf.otf") format("otf");
+} 
+
+  
+.font-l {
+    font-family: 'TT Chocolates Extra light', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    
+}
+
+.font-m {
+  font-family: "TT Chocolates Medium", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-sb {
+  font-family: "TT Chocolates Semibold", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.font-b {
+  font-family: "TT Chocolates Bold", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.font-exb {
+  font-family: "TT Chocolates Extra bold", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.fs-18px{
+  font-size: 18px !important;
+}
+
+.fs-20px{
+  font-size: 20px !important;
+}
+
+.fs-28px{
+  font-size: 28px !important;
+}
+
+
+.fs-45px{
+  font-size: 45px !important;
+}
+
+.fs-60px{
+  font-size: 60px !important;
+  background: #FFFFFF;
+  background: linear-gradient(to right, var(--c-font-accordion) 0%, #fff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+@media (max-width:992px) {
+  .fs-28px{
+    font-size: 20px !important;
+  }
+  .fs-60px{
+    font-size: 45px !important;
+  }
+  
+  .fs-20px{
+    font-size: 16px !important;
+  }
+  .fs-18px{
+    font-size: 14px !important;
+  }
+}
+@media (max-width:768px) {}
+@media (max-width:576px) {}

@@ -1,0 +1,122 @@
+
+#logotipo-innodev:hover{
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  scale: 1.10;
+}
+
+/* ACCORDION LIST */
+#accordion-servicos{
+  max-width: 1000px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  color: #fff;
+  padding: 12px;
+  margin: 0 auto 8px auto;
+  flex-wrap: nowrap;
+}
+
+.accordion-cabecalho{
+  color: var(--c-font-accordion);
+  border: 0.5px groove var(--c-font-accordion);
+  display: grid;
+  grid-template-columns: 1fr 52px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 12px;
+  padding: 24px 48px !important;
+}
+
+.accordion-cabecalho:hover{
+  box-shadow: 0 0 10px var(--c-font-accordion);
+  transition: 0.2s ease-in-out;
+  scale: 1.02;
+}
+
+#accordion-servicos img{
+  display: block;
+  align-self: center;
+}
+
+
+.accordion-conteudo{
+  height: 0;
+  opacity: 0;
+  transition: opacity 0.5s; 
+  overflow: hidden;
+}
+
+.accordion-conteudo.ativo{
+  color: var(--c-font-accordion);
+  border: 0.5px groove var(--c-font-accordion);
+  border-radius: 12px;
+  margin-top: 10px;
+  overflow: hidden;
+  height: 100%;
+  opacity: 1;
+  padding: 24px 48px;
+}
+
+.arrow.ativo{
+  transform: rotate(90deg);
+  transition: transform 0.2s linear;
+}
+
+
+#projetos{
+  padding-bottom: 300px;
+}
+
+.card-projetos{
+  width: 310px;
+  height: 340px;
+  background: linear-gradient(45deg,  #010205,  var( --c-azul-projetos));
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  align-items: end;
+  color: #fff ;
+}
+.card-projetos:hover{
+  scale: 1.10;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+
+#feedbacks{
+  position: relative;
+  margin-top: -300px;
+}
+
+#img-bg-feedback{
+  position: absolute;
+  left: 5%;
+  z-index: 0;
+}
+
+.card{
+  max-width: 450px !important;
+  min-height: 300px !important;
+  border-radius: 20px !important;
+  color: var(--c-acinzentado) !important;
+  margin-top: 40px;
+}
+
+.img-dev{
+  max-width: 560px;
+}
+
+@media (max-width:992px) {
+ .card{
+  scale: 0.90;
+ }
+
+}
+
+@media (max-width:768px) {}
+@media (max-width:576px) {}
+

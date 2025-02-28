@@ -1,0 +1,35 @@
+:root{
+  --c-primaria: #2A3695;
+  --c-font-accordion: #38B6FF;
+  --c-azul-header: #0842FD;
+  --c-azul-projetos: #0B1846;
+  --c-acinzentado: #838383;
+}
+
+.btn-primary{
+  background-color: var(--c-primaria) !important;
+}
+
+.color-primary{
+  color: var(--c-primaria) !important;
+}
+
+.bg-primary{
+  color: var(--c-primaria) !important;
+}
+
+.main-blue-bg{
+  background: linear-gradient(90deg,  var(--c-font-accordion), var(--c-azul-header)) !important;
+  border-radius: 50% 000% 0 0;
+  padding-top: 100px;
+}
+
+.main-blue-dark-bg{
+  background: linear-gradient(90deg,  #1A3CAC, #0B1846) !important;
+}
+
+#nossa-equipe{
+  background: linear-gradient(180deg,  var(--c-azul-projetos), #000) !important;
+  margin-top: -160px;
+  padding: 500px 0 240px 0;
+}
