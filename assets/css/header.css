@@ -5,12 +5,12 @@
 
 #header-section{
   padding-top: 88px;
-  border-radius: 0 0 60px 60px ;
+  border-radius: 0 0 60px 60px ;  
 }
 
 #nav-bar{
-  position: fixed;
   width: 100%;
+  position: fixed !important;
   z-index: 10;
   background: linear-gradient(90deg,  var(--c-azul-header),  var(--c-font-accordion));
 }
