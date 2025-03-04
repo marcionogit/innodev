@@ -10,20 +10,20 @@
 
 <body>
   <header class="header-bg">
-    <nav class="navbar" id="nav-bar">
+    <nav class="navbar  navbar-expand-lg" id="nav-bar">
       <div class="container-fluid">
 
 
-        <a class="navbar-brand p-3" href="#">
+        <a class="navbar-brand p-3" href="#" id="logotipo-innodev-nav">
           <img src="./assets/icons/header-logo.svg" alt="logotipo innodev" width="190" height="37">
         </a>
         <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon "></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
 
 
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="nav justify-content-end p-3 ">
             <li class="nav-item">
               <a class="nav-link text-white active" aria-current="page" href="#">portifólios</a>
@@ -35,25 +35,26 @@
               <a class="nav-link text-white" href="#">feedbacks</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white disabled" aria-disabled="true">contatos</a>
+              <a class="nav-link text-white" href="#">contatos</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-  </header>
+
+  </header> 
 
   <section class="header-bg" id="header-section">
     <div class="container py-5 px-4">
       <div class="row d-flex">
         <div class="col-lg-6">
-          <h1 class="text-white mb-5 fs-45px">Soluções digitais que transformam negócios e impulsionam resultados</h1>
+          <h1 class="text-white mb-5 fs-45px digitando">Soluções digitais que <br> transformam negócios e <br> impulsionam resultados</h1>
           <p class="text-white mb-5 fs-18px">Uma equipe jovem e apaixonada por tecnologia, dedicada a criar experiências
             digitais extraordinárias. Combinamos talentos em desenvolvimento, design e UX para transformar suas ideias
             em realidade.</p>
           <div class="row">
             <div class="col">
-              <button class="btn bg-white rounded-5 fs-20px px-4">Ver portifólio</button>
+              <button class="btn bg-white rounded-5 fs-20px px-4 me-2">Ver portifólio</button>
               <button class="btn btn-primary text-white rounded-5 border-0 fs-20px px-4">Saiba Mais</button>
             </div>
           </div>
@@ -74,7 +75,7 @@
     <section class="mb-5">
       <div class="container py-5 mt-5">
         <div class="row d-flex align-items-center">
-          <div class="col-lg-5 px-4">
+          <div class="col-lg-5 px-4 ">
             <h2 class="fs-45px color-primary font-b mb-4">Como podemos ajudar<br> o seu negócio?</h2>
             <p class="fs-18px font-sb mb-4">Desenvolvemos soluções estratégicas e criativas para levar sua empresa além.
               Tecnologia de ponta, execução impecável e resultados que fazem a diferença.</p>
@@ -84,7 +85,8 @@
               colaboradores a enxergar além do óbvio e conquistar, juntos, um futuro mais próspero. Venha descobrir como
               podemos transformar suas ideias em soluções inovadoras e eficientes.</p>
           </div>
-          <div class="col-7 d-none d-lg-block">
+
+          <div class="col-7 d-none d-lg-block baixo view">
             <div>
               <img src="./assets/image/section-jovem.png" alt="Jovem feliz mexendo no computador" width="500"
                 height="500" class="d-block mx-auto">
@@ -99,21 +101,34 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <div class="d-flex justify-content-center">
+              <div class="d-flex justify-content-center esquerda view">
                 <img src="./assets/image/wave-blue-logotipo.png" alt="Logotipo INNODEV" id="logotipo-innodev">
               </div>
             </div>
-            <div class="col">
+
+            <div class="col d-flex align-items-end pb-5">
               <div class="text-white">
-                <h4 class="font-b">Excelência</h4>
-                <p>Buscamos o aprimoramento contínuo, evoluindo para o mais alto padrão de qualidade em tudo o que
-                  fazemos.</p>
+                <div class="inno-valores direita view">
+
+                  <h4 class="font-l fs-32px" id="inno-title">Excelência</h4>
+                  <p class="font-l fs-24px" style="max-width: 480px;" id="inno-desc">Buscamos o aprimoramento contínuo, evoluindo para o mais alto padrão de qualidade em tudo o que
+                    fazemos.</p>
+                </div>
+                <div class="row pt-3" style="width: 100px;">
+                  <button style="background-color: transparent; border:none" class="col-6 inno-btn" id="btn-prev">
+                    <img src="./assets/icons/arrow-p-left.svg" alt="botão de voltar" >
+                  </button>
+                  <button style="background-color: transparent; border:none" class="col-6 inno-btn" id="btn-next">
+                    <img src="./assets/icons/arrow-p-rigth.svg" alt="botão proximo" >
+                  </button>
+                </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
-      <img src="./assets/image/wave-blue-bottom.svg" alt="Onde de estilo azul" class="w-100 main-blue-dark-bg">
+      <img src="./assets/image/wave-blue-bottom.svg" alt="Onda de estilo azul" class="w-100 main-blue-dark-bg">
     </section>
 
     <section class="main-blue-dark-bg" id="servicos">
@@ -127,10 +142,10 @@
             <div id="accordion-servicos">
 
               <!-- LINHA DO ACCORDION -->
-              <div class="accordion-corpo">
+              <div class="accordion-corpo baixo view">
 
                 <!-- CABECALHO -->
-                <span class="accordion-cabecalho">
+                <span class="accordion-cabecalho ">
                   <span class="fs-28px font-l">Ladding pages profissionais</span>
                   <img src="./assets/icons/arrow-right.svg" alt="icon indicador de accordion aberto" class="arrow">
                 </span>
@@ -154,10 +169,10 @@
 
             <div id="accordion-servicos">
               <!-- LINHA DO ACCORDION -->
-              <div class="accordion-corpo">
+              <div class="accordion-corpo ">
 
                 <!-- CABECALHO -->
-                <span class="accordion-cabecalho">
+                <span class="accordion-cabecalho baixo view">
                   <span class="fs-28px font-l">Desenvolvimento de Websites</span>
                   <img src="./assets/icons/arrow-right.svg" alt="icon indicador de accordion aberto" class="arrow">
                 </span>
@@ -182,7 +197,7 @@
 
             <div id="accordion-servicos">
               <!-- LINHA DO ACCORDION -->
-              <div class="accordion-corpo">
+              <div class="accordion-corpo baixo view">
 
                 <!-- CABECALHO -->
                 <span class="accordion-cabecalho">
@@ -225,7 +240,7 @@
       <div class="container py-0">
         <div class="row my-lg-5 ">
 
-          <div class="col-lg-4 py-lg-5 py-0">
+          <div class="col-lg-4 py-lg-5 py-0 baixo view">
             <div class="card-projetos my-md-5 mb-5 mx-auto">
               <div class="row">
                 <div class="col-12">
@@ -239,7 +254,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 py-lg-5 py-0">
+          <div class="col-lg-4 py-lg-5 py-0 baixo view">
             <div class="card-projetos mx-auto">
               <div class="row">
                 <div class="col-12">
@@ -253,7 +268,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 mt-lg-5 mt-0">
+          <div class="col-lg-4 mt-lg-5 mt-0 baixo view">
             <div class="card-projetos my-5 mx-auto">
               <div class="row">
                 <div class="col-12">
@@ -355,10 +370,10 @@
         </div>
 
         <div class="row pt-5 align-items-center" >
-          <div class="col-12 col-lg-6 pt-5">
+          <div class="col-12 col-lg-6 pt-5 esquerda view">
             <img src="./assets/image/img-yuri.png" alt="foto dev yuri" class="img-dev img-fluid">
           </div>
-          <div class="col text-white">
+          <div class="col-12 col-lg-6 text-white direita view">
             <h4 class="fs-45px pb-4">Yuri Erdemann</h4>
             <p class="fs-20px">Yuri Erdemamm é um desenvolvedor <strong>fullstack</strong> visionário e empreendedor nato, fundandor da <strong>INNODEV</strong>. <br><br>
 
@@ -366,13 +381,13 @@
           </div>
 
         <div class="row pt-5 align-items-center change-order" >
-          <div class="col text-white">
+          <div class="col text-white direita view">
             <h4 class="fs-45px pb-4">Márcio César</h4>
             <p class="fs-20px">Márcio César é um programador web e <strong>designer</strong>, focado em criar experiências de usuário <strong>(UX)</strong> e interfaces de usuário <strong>(UI)</strong>. <br><br> 
 
               Com uma combinação única de habilidades técnicas e criativas, Márcio é conhecido por sua capacidade de transformar ideias complexas em designs intuitivos e visualmente atraentes.</p>
           </div>
-          <div class="col-12 col-lg-6 pt-5 d-flex justify-content-center">
+          <div class="col-12 col-lg-6 pt-5 d-flex justify-content-center direita view">
             <img src="./assets/image/img-marcio.png" alt="foto dev marcio" class="img-dev img-fluid">
           </div>
 

@@ -1,8 +1,25 @@
+#logotipo-innodev {
+  transition: all 0.2s ease-in-out;
+}
+
 #logotipo-innodev:hover {
-  transition: all 0.4s ease-in-out;
   cursor: pointer;
   scale: 1.10;
 }
+
+.inno-btn{
+  transition: 0.2s ease-in-out;
+}
+
+.inno-btn:hover{
+  opacity: 50%;
+  scale: 1.1;
+}
+
+.inno-valores{
+  transition: all 0.2s ease-in-out;
+}
+
 
 /* ACCORDION LIST */
 #accordion-servicos {
@@ -27,11 +44,11 @@
   cursor: pointer;
   border-radius: 12px;
   padding: 24px 48px !important;
+  transition: 0.2s ease-in-out;
 }
 
 .accordion-cabecalho:hover {
   box-shadow: 0 0 10px var(--c-font-accordion);
-  transition: 0.2s ease-in-out;
   scale: 1.02;
 }
 
@@ -58,10 +75,12 @@
   opacity: 1;
   padding: 24px 48px;
 }
+.arrow{
+  transition: all 0.2s ease-in-out;
+}
 
 .arrow.ativo {
   transform: rotate(90deg);
-  transition: transform 0.2s linear;
 }
 
 
@@ -78,11 +97,11 @@
   display: flex;
   align-items: end;
   color: #fff;
+  transition: all 0.2s ease-in-out;
 }
 
 .card-projetos:hover {
   scale: 1.10;
-  transition: all 0.4s ease-in-out;
   cursor: pointer;
 }
 

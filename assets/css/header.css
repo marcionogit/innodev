@@ -1,3 +1,20 @@
+#logotipo-innodev-nav:hover{
+  animation: logo-move .5s ease infinite;
+}
+
+@keyframes logo-move {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(2deg);
+  }
+}
+
 .header-bg{
   background: linear-gradient(90deg,  var(--c-azul-header),  var(--c-font-accordion));
 }
@@ -22,4 +39,23 @@
 
 .custom-toggler.navbar-toggler {
   border-color: rgb(253, 253, 253) !important;
-} 
+}
+
+li a::after{
+  content: '';
+  display: block;
+  background-color: #fff;
+  transition: all 0.2s ease-in-out;
+  width: 0%;
+  height: 2px;
+  text-align: end;
+}
+
+li a:hover::after{
+  width: 100%;
+}
+
+.digitando{
+  white-space: nowrap;
+  overflow: hidden;
+}
