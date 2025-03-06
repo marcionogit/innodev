@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <header class="header-bg">
+  <header class="gradiente-azul-bg">
     <nav class="navbar  navbar-expand-lg" id="nav-bar">
       <div class="container-fluid">
 
@@ -24,18 +24,18 @@
 
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="nav justify-content-end p-3 ">
+          <ul class="nav justify-content-end p-sm-3 ">
             <li class="nav-item">
-              <a class="nav-link text-white active" aria-current="page" href="#">portifólios</a>
+              <a class="nav-link text-white active" aria-current="page" href="#projetos">portifólios</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="#">orçamentos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">feedbacks</a>
+              <a class="nav-link text-white" href="#feedbacks">feedbacks</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">contatos</a>
+              <a class="nav-link text-white" href="#contatos">contatos</a>
             </li>
           </ul>
         </div>
@@ -44,18 +44,20 @@
 
   </header> 
 
-  <section class="header-bg" id="header-section">
+  <section class="gradiente-azul-bg" id="header-section">
     <div class="container py-5 px-4">
       <div class="row d-flex">
         <div class="col-lg-6">
-          <h1 class="text-white mb-5 fs-45px digitando">Soluções digitais que <br> transformam negócios e <br> impulsionam resultados</h1>
+          <h1 class="text-white mb-5 fs-45px digitando">Soluções digitais que transformam negócios e impulsionam resultados</h1>
           <p class="text-white mb-5 fs-18px">Uma equipe jovem e apaixonada por tecnologia, dedicada a criar experiências
             digitais extraordinárias. Combinamos talentos em desenvolvimento, design e UX para transformar suas ideias
             em realidade.</p>
-          <div class="row">
-            <div class="col">
-              <button class="btn bg-white rounded-5 fs-20px px-4 me-2">Ver portifólio</button>
-              <button class="btn btn-primary text-white rounded-5 border-0 fs-20px px-4">Saiba Mais</button>
+          <div class="row align-items-center gap-lg-4 mx-0" style="max-width: 460px;">
+            <div class="col-md-4 col px-sm-0 ps-3">
+              <button class="btn bg-white rounded-5 fs-20px px-4 btn-header">Ver portifólio</button>
+            </div>
+            <div class="col-sm-6 col-5 px-0">
+              <button class="btn btn-primary text-white rounded-5 border-0 fs-20px px-4 btn-header">Saiba Mais</button>
             </div>
           </div>
         </div>
@@ -76,7 +78,7 @@
       <div class="container py-5 mt-5">
         <div class="row d-flex align-items-center">
           <div class="col-lg-5 px-4 ">
-            <h2 class="fs-45px color-primary font-b mb-4">Como podemos ajudar<br> o seu negócio?</h2>
+            <h2 class="fs-45px color-primary font-b mb-4">Como podemos ajudar o seu negócio?</h2>
             <p class="fs-18px font-sb mb-4">Desenvolvemos soluções estratégicas e criativas para levar sua empresa além.
               Tecnologia de ponta, execução impecável e resultados que fazem a diferença.</p>
             <p class="fs-18px mb-4">Estamos comprometidos em ser a referência no desenvolvimento de software,
@@ -107,8 +109,8 @@
             </div>
 
             <div class="col d-flex align-items-end pb-5">
-              <div class="text-white">
-                <div class="inno-valores direita view">
+              <div class="text-white px-sm-0 px-3">
+                <div class="inno-valores baixo view">
 
                   <h4 class="font-l fs-32px" id="inno-title">Excelência</h4>
                   <p class="font-l fs-24px" style="max-width: 480px;" id="inno-desc">Buscamos o aprimoramento contínuo, evoluindo para o mais alto padrão de qualidade em tudo o que
@@ -136,7 +138,7 @@
 
         <div class="row">
           <div class="col-12 mx-auto mb-5" style="max-width: 1000px;">
-            <h2 class="fs-60px">Nossos serviços</h2>
+            <h2 class="fs-60px px-0 px-3">Nossos serviços</h2>
           </div>
           <div class="col-12 mx-auto">
             <div id="accordion-servicos">
@@ -289,14 +291,14 @@
     <section id="feedbacks">
       <div class="container-fluid " style="max-width: 1400px;">
         <img src="./assets/image/feedbacks.svg" alt="Ilustração para sessão de feedback's" id="img-bg-feedback" class="d-lg-block d-none">
-        <div class="row ms-auto me-lg-0 me-auto"style="max-width: 920px;">
+        <div class="col-12" style="z-index: 1 !important;">
+          <h3 class="text-center fs-45px font-b pt-5" style="color: var(--c-font-accordion)">Feedbacks de clientes
+          </h3>
+        </div>
+        <div class="row ms-auto me-lg-0 me-auto"style="max-width: 920px;" id="slide">
 
-          <div class="col-12" style="z-index: 1 !important;">
-            <h3 class="text-center fs-45px font-b pt-5" style="color: var(--c-font-accordion)">Feedbacks de clientes
-            </h3>
-          </div>
 
-          <div class="col-md-6 col-12 d-flex justify-content-center">
+          <div class="col-6 px-sm-2 px-0 d-flex justify-content-center coment" >
             <div class="card p-2">
               <div class="card-body">
                 <div class="row">
@@ -326,7 +328,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-12 d-flex justify-content-center">
+          <div class="col-6 px-sm-2 px-0 d-flex justify-content-center coment">
             <div class="card p-2">
               <div class="card-body">
                 <div class="row">
@@ -361,7 +363,7 @@
     </section>
 
     <section id="nossa-equipe">
-      <div class="container">
+      <div class="container px-sm-0 px-5">
 
         <div class="row">
           <div class="col">
@@ -369,8 +371,8 @@
           </div>
         </div>
 
-        <div class="row pt-5 align-items-center" >
-          <div class="col-12 col-lg-6 pt-5 esquerda view">
+        <div class="row pt-sm-5 align-items-center" >
+          <div class="col-12 col-lg-6 pt-sm-5 esquerda view">
             <img src="./assets/image/img-yuri.png" alt="foto dev yuri" class="img-dev img-fluid">
           </div>
           <div class="col-12 col-lg-6 text-white direita view">
@@ -381,14 +383,14 @@
           </div>
 
         <div class="row pt-5 align-items-center change-order" >
-          <div class="col text-white direita view">
+          <div class="col text-white baixo view">
             <h4 class="fs-45px pb-4">Márcio César</h4>
             <p class="fs-20px">Márcio César é um programador web e <strong>designer</strong>, focado em criar experiências de usuário <strong>(UX)</strong> e interfaces de usuário <strong>(UI)</strong>. <br><br> 
 
               Com uma combinação única de habilidades técnicas e criativas, Márcio é conhecido por sua capacidade de transformar ideias complexas em designs intuitivos e visualmente atraentes.</p>
           </div>
           <div class="col-12 col-lg-6 pt-5 d-flex justify-content-center direita view">
-            <img src="./assets/image/img-marcio.png" alt="foto dev marcio" class="img-dev img-fluid">
+            <img src="./assets/image/img-marcio.png" alt="foto dev marcio" class="img-dev img-fluid" id="foto-marcio">
           </div>
 
         </div>
@@ -400,7 +402,38 @@
 
   </main>
 
-  <footer></footer>
+  <footer class="gradiente-azul-bg">
+<div class="container-fluid mx-auto py-5">
+  <div class="row px-0 mx-0 mt-5 text-white">
+    <div class="col-8"><img src="./assets/icons/header-logo.svg" alt=""></div>
+    <div class="col-4">
+      <div class="row">
+        <div class="col">
+          <h5 class="mb-3">Projetos</h5>
+          <a href="#" class="d-block text-white mb-2" style="text-decoration: none;">Projeto 1</a>
+          <a href="#" class="d-block text-white mb-2" style="text-decoration: none;">Projeto 2</a>
+          <a href="#" class="d-block text-white mb-2" style="text-decoration: none;">Projeto 3</a>
+        </div>
+        <div class="col">
+          <h5 class="mb-3">Navegação</h5>
+          <a href="#" class="d-block text-white mb-2" style="text-decoration: none;">portifólio</a>
+          <a href="#" class="d-block text-white mb-2" style="text-decoration: none;">orçamentos</a>
+          <a href="#" class="d-block text-white mb-2" style="text-decoration: none;">feedbacks</a>
+          <a href="#" class="d-block text-white mb-2" style="text-decoration: none;">contatos</a>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5 pt-5">
+      <div class="col-10 ">© 2025 INNODEV. Todos os direitos reservados</div>
+      <div class="col-2 d-flex gap-3 justify-content-end align-items-center">
+        <a href="http://"><img src="./assets/icons/linkedin.png" alt="icone linkedin"></a>
+        <a href="http://"><img src="./assets/icons/x.png" alt="icone x"></a>
+        <a href="http://"><img src="./assets/icons/instagram.png" alt="icone instagram"></a>
+      </div>
+    </div>
+  </div>
+</div>
+  </footer>
 
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"

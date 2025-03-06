@@ -15,7 +15,7 @@
   }
 }
 
-.header-bg{
+.gradiente-azul-bg{
   background: linear-gradient(90deg,  var(--c-azul-header),  var(--c-font-accordion));
 }
 
@@ -55,7 +55,20 @@ li a:hover::after{
   width: 100%;
 }
 
-.digitando{
+
+.btn-header{
   white-space: nowrap;
-  overflow: hidden;
+  display: inline-block !important;
+}
+@media (max-width:768px) {
+
+  .btn-header{
+    scale: 1.2 !important;
+  }
+}
+@media (max-width:450px) {
+
+  .nav-item{
+    padding: 8px !important;
+  }
 }
