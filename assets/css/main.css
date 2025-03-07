@@ -119,7 +119,8 @@
 }
 
 .card {
-  max-width: 450px !important;
+  display: block;
+  width: 450px;
   min-height: 300px !important;
   border-radius: 20px !important;
   color: var(--c-acinzentado) !important;
@@ -154,6 +155,9 @@
 }
 
 @media (max-width:576px) {
+  .card {
+    scale: 0.65;
+  }
 }
 
 @media (max-width:450px) {
