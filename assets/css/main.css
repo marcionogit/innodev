@@ -1,3 +1,4 @@
+/* Animação logo */
 #logotipo-innodev {
   transition: all 0.2s ease-in-out;
 }
@@ -6,6 +7,8 @@
   cursor: pointer;
   scale: 1.10;
 }
+
+/* Botões next e prev */
 
 .inno-btn{
   transition: 0.2s ease-in-out;
@@ -16,12 +19,16 @@
   scale: 1.1;
 }
 
+/* Textos com valores da empresa */
+
 .inno-valores{
   transition: all 0.2s ease-in-out;
 }
 
 
 /* ACCORDION LIST */
+
+/* container que segura o accordion */
 #accordion-servicos {
   max-width: 1000px;
   background-color: transparent;
@@ -57,7 +64,6 @@
   align-self: center;
 }
 
-
 .accordion-conteudo {
   height: 0;
   opacity: 0;
@@ -75,6 +81,7 @@
   opacity: 1;
   padding: 24px 48px;
 }
+
 .arrow{
   transition: all 0.2s ease-in-out;
 }
@@ -84,15 +91,19 @@
 }
 
 
+
+
+/* Projetos */
+
 #projetos {
   padding-bottom: 300px;
   margin-top: -20px;
 }
 
 .card-projetos {
+  background: linear-gradient(45deg, #010205, var(--c-azul-projetos));
   width: 310px;
   height: 340px;
-  background: linear-gradient(45deg, #010205, var(--c-azul-projetos));
   border-radius: 16px;
   padding: 16px;
   display: flex;
@@ -107,6 +118,9 @@
 }
 
 
+
+/* Feedbacks */
+
 #feedbacks {
   position: relative;
   margin-top: -300px;
@@ -118,6 +132,21 @@
   z-index: 0;
 }
 
+
+
+/* Container que segura os cards de comentários */
+.swiper {
+  height: 400px;
+  padding-left: 600px !important;
+}
+
+/* Grupo de dois cards do slide */
+.swiper-slide{
+  margin-right: 500px !important;
+  width: 900px !important;
+}
+
+/* Card de comentário */
 .card {
   display: block;
   width: 450px;
@@ -127,11 +156,53 @@
   margin-top: 40px;
 }
 
+/* foto perfil do comentário */
 .img-dev {
   max-width: 560px;
 }
 
+
+#nossa-equipe{
+  margin-top: -160px;
+  padding: 500px 0 240px 0;
+}
+
+
+
+/* Media */
+
+@media (max-width:1380px) {
+  
+  .swiper {
+    padding-left: 400px !important;
+  }
+  
+  
+  .swiper-slide{
+    margin-right: 200px !important;
+  }
+  
+}
+
+
+
+
+
+
 @media (max-width:992px) {
+  
+  .swiper {
+    height: 360px;
+    padding-left: 40px !important;
+  }
+  
+  
+  .swiper-slide{
+    margin-right: 80px !important;
+    width: 800px !important;
+  }
+
+
   .card {
     scale: 0.90;
     margin-top: 12px;
@@ -141,29 +212,64 @@
     display: flex !important;
     flex-direction: column-reverse !important;
   }
-
+  
 }
 
+
+
+
+
+
 @media (max-width:768px) {
+  
   #feedbacks {
     position: relative;
     background-color:var(--c-azul-projetos);
   }
+
   .card {
     scale: 0.75;
   }
+
+  .swiper-slide{
+    width: 700px !important;
+  }
+  
 }
 
+
+
+
+
+
 @media (max-width:576px) {
+  
+  .swiper-slide{
+  margin-right: 40px !important;
+  width: 600px !important;
+}
+
+  .swiper{
+  margin-left: -100px !important;
+  }
+
   .card {
     scale: 0.65;
   }
+
+  .swiper-pagination{
+    margin-left: 40px;
+  }
 }
 
+
+
+
+
+
+
 @media (max-width:450px) {
-  .card {
-    scale: 0.5;
-  }
+
   #logotipo-innodev{
     max-width: 260px;
   }
@@ -172,9 +278,19 @@
     padding: 16px 16px !important;
   }
 
+  .swiper-slide{
+    margin-right: 40px !important;
+    width: 450px !important;
+  }
+
+  .card {
+    scale: 0.5;
+  }
+
   #foto-marcio{
     max-width: 240px;
     z-index: 1;
     overflow-x: hidden;
   }
+
 }

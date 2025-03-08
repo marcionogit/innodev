@@ -1,0 +1,85 @@
+/* KEYFRAMES */
+
+/* Animação do logo na navegação do header */
+@keyframes logo-move {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(2deg);
+  }
+}
+
+#logotipo-innodev-nav:hover{
+  animation: logo-move .5s ease infinite;
+}
+
+
+
+/* Animação esquerda para direita */
+@keyframes anima-esquerda {
+  from{
+    opacity: 0;
+    margin-left: -200px;
+  }
+
+  to{
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+
+
+.esquerda{
+  animation: anima-esquerda .8s linear; 
+}
+
+
+
+/* Animação direita para esquerda */
+@keyframes anima-direita {
+  from{
+    opacity: 0;
+    margin-right: -200px;
+  }
+  
+  to{
+    opacity: 1;
+    margin-right: 0;
+  }
+}
+
+.direita{
+  animation: anima-direita .8s linear;
+}
+
+
+
+/* Animação de baixo para cima */
+@keyframes anima-baixo {
+  from{
+    opacity: 0;
+    scale: 0;
+  }
+  
+  to{
+    opacity: 1;
+    margin-bottom: 0;
+  }
+}
+
+.baixo{
+  animation: anima-baixo .8s linear;
+}
+
+
+/* Class que ativa as animações */
+
+.view{
+  animation-timeline: view();
+  animation-range: entry 0%;
+}

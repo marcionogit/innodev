@@ -11,7 +11,10 @@ accordion.forEach((cabecalho)=>{
   })
 })
 
-// 
+
+
+
+// Alteração dos valores da empresa de acordo com os cliques no bts de navegação
 
 const btnPrev = document.querySelector('#btn-prev');
 const btnNext = document.querySelector('#btn-next');
@@ -21,6 +24,8 @@ let innoTitle = document.querySelector('#inno-title');
 let innoDesc = document.querySelector('#inno-desc');
 let innoValores = document.querySelector('.inno-valores');
 
+
+// Btn Prev
 btnPrev.addEventListener('click', ()=>{
   text += 1
   if(text >= 5){
@@ -29,7 +34,6 @@ btnPrev.addEventListener('click', ()=>{
   
   innoValores.style.marginLeft = '-100px'
   innoValores.style.opacity = '0%'
-  
   
   setTimeout(() => {
   switch (text) {
@@ -61,13 +65,12 @@ btnPrev.addEventListener('click', ()=>{
       innoValores.style.opacity = '100%'
     break;
       }
-
    
       }, "200");
     })
     
 
-
+// Btn next
 btnNext.addEventListener('click', ()=>{
   text -= 1
   if(text <= 0){
@@ -110,6 +113,8 @@ btnNext.addEventListener('click', ()=>{
      }, "200");
 })
 
+
+// Card's de comentário
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 100,

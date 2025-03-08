@@ -31,36 +31,36 @@
   
 .font-l {
     font-family: 'TT Chocolates Extra light', sans-serif;
-    font-optical-sizing: auto;
+    font-optical-sizing: 100 !important;
     font-style: normal;
-    
+    font-weight: 100 !important;
 }
 
 .font-m {
   font-family: "TT Chocolates Medium", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 400 !important;
   font-style: normal;
 }
 
 .font-sb {
   font-family: "TT Chocolates Semibold", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 500 !important;
   font-style: normal;
 }
 
 .font-b {
   font-family: "TT Chocolates Bold", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 700;
+  font-weight: 700 !important;
   font-style: normal;
 }
 
 .font-exb {
   font-family: "TT Chocolates Extra bold", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 900;
+  font-weight: 900 !important;
   font-style: normal;
 }
 
@@ -89,10 +89,6 @@
 
 .fs-60px{
   font-size: 60px !important;
-  background: #FFFFFF;
-  background: linear-gradient(to right, var(--c-font-accordion) 0%, #fff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 
@@ -111,10 +107,9 @@
   .fs-45px{
     font-size: 36px !important;
   }
-  /* .fs-18px{
-    font-size: 14px !important;
-  } */
 }
+
+
 @media (max-width:768px) {
   .fs-60px{
     font-size: 40px !important;
@@ -124,4 +119,3 @@
     font-size: 20px !important;
   }
 }
-@media (max-width:576px) {}

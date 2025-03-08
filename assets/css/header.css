@@ -1,38 +1,23 @@
-#logotipo-innodev-nav:hover{
-  animation: logo-move .5s ease infinite;
-}
 
-@keyframes logo-move {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  50% {
-    transform: rotate(-2deg);
-  }
-  100% {
-    transform: rotate(2deg);
-  }
-}
-
-.gradiente-azul-bg{
-  background: linear-gradient(90deg,  var(--c-azul-header),  var(--c-font-accordion));
-}
-
+/* HEADER */
 
 #header-section{
   padding-top: 88px;
   border-radius: 0 0 60px 60px ;  
 }
 
+
+
+/* Barra de navegação */
 #nav-bar{
   width: 100%;
   position: fixed !important;
   z-index: 10;
-  background: linear-gradient(90deg,  var(--c-azul-header),  var(--c-font-accordion));
 }
 
 
+
+/* Menu hamburguer */
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(253, 253, 253)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
 }
@@ -41,6 +26,9 @@
   border-color: rgb(253, 253, 253) !important;
 }
 
+
+
+/* Estilo hover nos links da barra de navegação */
 li a::after{
   content: '';
   display: block;
@@ -56,16 +44,20 @@ li a:hover::after{
 }
 
 
+/* Botões de ação dentro da section header */
 .btn-header{
   white-space: nowrap;
   display: inline-block !important;
 }
+
+
 @media (max-width:768px) {
 
   .btn-header{
     scale: 1.2 !important;
   }
 }
+
 @media (max-width:450px) {
 
   .nav-item{
