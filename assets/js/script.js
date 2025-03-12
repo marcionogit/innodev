@@ -123,3 +123,17 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
+
+// Modal
+
+const btnEnviar = document.querySelector('#enviar');
+
+btnEnviar.addEventListener('click', (e)=>{
+  let nome = document.querySelector('#nome').value;
+  let mensagem = document.querySelector('#mensagem').value;
+  
+    console.log(nome)
+    let boasVindas = `Olá, meu nome é `
+    btnEnviar.setAttribute('href', `https://api.whatsapp.com/send?phone=13997379899&text=${boasVindas} ${nome}%0A${mensagem}`);
+
+})

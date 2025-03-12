@@ -17,8 +17,33 @@ img{
   display: block;
 }
 
+a{
+  text-decoration: none !important;
+}
+
 .btn:hover{
   scale: 1.1;
   transition: all 0.2s ease-in-out;
   opacity: 90%;
+}
+
+#img-whats{
+  position: fixed;
+  right: 104px;
+  bottom: 120px;
+  z-index: 1;
+}
+
+#btn-whats{
+  cursor: pointer;
+  position: fixed;
+  right: 104px;
+  bottom: 120px;
+  background-color: #00a028d0;
+  height: 39px;
+  width: 39px;
+  animation: btn-whatsapp .8s alternate-reverse;
+  animation-iteration-count: infinite;
+  border-radius: 50%;
+  z-index: 0;
 }
