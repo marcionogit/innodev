@@ -114,6 +114,9 @@ btnNext.addEventListener('click', ()=>{
 })
 
 
+
+
+
 // Card's de comentário
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
@@ -124,16 +127,48 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+
+
+
+
 // Modal
+
+function verificaNome(nome){
+  const mostrar = document.querySelector('#textNome');
+  
+  if(nome.length >= 6){
+    mostrar.classList.add('d-none');
+  } else{
+    mostrar.classList.remove('d-none');
+  }
+}
+
+function verificaMsg(msg){
+  const mostrar = document.querySelector('#textMensagem');
+
+  if(msg.length >= 20){
+    mostrar.classList.add('d-none');
+  } else{
+    mostrar.classList.remove('d-none');
+  }
+}
+
 
 const btnEnviar = document.querySelector('#enviar');
 
 btnEnviar.addEventListener('click', (e)=>{
+  e.preventDefault()
+
   let nome = document.querySelector('#nome').value;
   let mensagem = document.querySelector('#mensagem').value;
-  
-    console.log(nome)
-    let boasVindas = `Olá, meu nome é `
-    btnEnviar.setAttribute('href', `https://api.whatsapp.com/send?phone=13997379899&text=${boasVindas} ${nome}%0A${mensagem}`);
 
+  verificaNome(nome);
+  verificaMsg(mensagem);
+
+  if(nome.length >= 6 && mensagem.length >= 20){
+    let boasVindas = `Olá, meu nome é `
+
+    location.assign(`https://api.whatsapp.com/send?phone=13997379899&text=${boasVindas} ${nome}%0A${mensagem}`);
+
+  } 
 })
