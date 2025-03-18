@@ -168,7 +168,7 @@ btnEnviar.addEventListener('click', (e)=>{
   if(nome.length >= 6 && mensagem.length >= 20){
     let boasVindas = `Olá, meu nome é `
 
-    location.assign(`https://api.whatsapp.com/send?phone=13997379899&text=${boasVindas} ${nome}%0A${mensagem}`);
+    location.assign(`https://api.whatsapp.com/send?phone=5198063381&text=${boasVindas} ${nome}%0A${mensagem}`);
 
   } 
 })
