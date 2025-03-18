@@ -1,3 +1,5 @@
+#valores{}
+
 /* Animação logo */
 #logotipo-innodev {
   transition: all 0.2s ease-in-out;
@@ -220,6 +222,10 @@
 
 
 @media (max-width:768px) {
+
+  .inno-valores{
+    height: 110px;
+  }
   
   #feedbacks {
     position: relative;
