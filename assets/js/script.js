@@ -118,15 +118,24 @@ btnNext.addEventListener('click', ()=>{
 
 
 // Card's de comentário
-var swiper = new Swiper(".mySwiper", {
+
+let swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
-  spaceBetween: 100,
+  spaceBetween: 600,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
 });
 
+let swiperP = new Swiper(".mySwiperP", {
+  slidesPerView: 2,
+  spaceBetween: 175,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 
 
 
