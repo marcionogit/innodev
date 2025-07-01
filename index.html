@@ -9,6 +9,8 @@
   <meta name="description" content="Criação de sites sob medida para empresas que buscam inovação, performance e design de alta qualidade. Potencialize sua presença digital com soluções eficientes e personalizadas.">
   <link rel="icon" type="image/x-icon" href="/assets/icons/favicon-32x32.ico">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
@@ -293,57 +295,52 @@
 
     <section id="feedbacks" class="main-blue-dark-bg">
       <div class="" >
-        <img src="./assets/image/feedbacks.svg" alt="Ilustração para sessão de feedback's" id="img-bg-feedback" class="d-lg-block d-none" width="490" height="480">
-        <div class="col-12" style="z-index: 1 !important;">
+        <div class="col-12 z-3" >
           <h3 class="text-center fs-45px font-b pt-5" style="color: var(--c-font-accordion)">Feedbacks de clientes
           </h3>
         </div>
+        <img src="./assets/image/feedbacks.svg" alt="Ilustração para sessão de feedback's" id="img-bg-feedback" class="z-0 d-lg-block d-none" width="490" height="480">
+   
+        <!-- swiper desktop -->
+        <div class="swiper mySwiper d-none d-sm-block">
+          <div class="swiper-wrapper">
 
-        <!-- Slider main container P-->
-        <div class="swiper mySwiper d-none d-md-block">
-          <div class="swiper-wrapper d-flex">
+            <div class="swiper-slide d-flex" >
+              <div class="px-sm-2 px-0 coment" >
+                  <div class="card p-2  rounded-5" >
+                  <div class="card-body">
+                      <div class="row">
+                        <div class="col-12">
+                          <img src="./assets/icons/aspas-feedback.svg" width="52" height="34" class="icone de comentário" alt="...">
+                        </div>
+                        <div class="col pt-3">
+                          <p class="card-text pt-2">Gostaria de expressar meu profundo agradecimento ao INNODEV pelo
+                            atendimento
+                            excepcional. Sua cordialidade, atenção aos detalhes e prontidão em atender fizeram toda a
+                            diferença.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row px-2">
+                      <div class="col-lg-2 col-3">
+                        <img src="./assets/image/perfil-comentario-1.webp" width="48" height="48" alt="Foto do cliente numero 1">
+                      </div>
+                      <div class="col">
+                        <h5 class="fw-bold my-0 fs-20px" style="color: #000;">Lucas Bastos</h5>
+                        <p class="fs-18px">Passo Fundo - MG</p>
+                      </div>
+                    </div>
 
+                  </div>   
+                </div>
 
-            <div class="swiper-slide">
-              <div class="row">
-                <div class="col-6">
-                  <div class="px-sm-2 px-0 coment" >
-                    <div class="card p-2">
-                      <div class="card-body">
+                <div class="px-sm-2 px-0 coment" >
+                    <div class="card p-2  rounded-5" >
+                    <div class="card-body">
                         <div class="row">
                           <div class="col-12">
                             <img src="./assets/icons/aspas-feedback.svg" width="52" height="34" class="icone de comentário" alt="...">
-                          </div>
-                          <div class="col pt-3">
-                            <p class="card-text pt-2">Gostaria de expressar meu profundo agradecimento ao INNODEV pelo
-                              atendimento
-                              excepcional. Sua cordialidade, atenção aos detalhes e prontidão em atender fizeram toda a
-                              diferença.</p>
-                          </div>
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="row px-2">
-                        <div class="col-lg-2 col-3">
-                          <img src="./assets/image/perfil-comentario-1.webp" width="48" height="48" alt="Foto do cliente numero 1">
-                        </div>
-                        <div class="col">
-                          <h5 class="fw-bold my-0 fs-20px" style="color: #000;">Lucas Bastos</h5>
-                          <p class="fs-18px">Possos de calda - MG</p>
-                        </div>
-                      </div>
-      
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-6">
-                  <div class="px-sm-2 px-0 coment" >
-                    <div class="card p-2">
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="col-12">
-                            <img src="./assets/icons/aspas-feedback.svg" width="52" height="34" class="icone de comentário" alt="icone aspas comentário">
                           </div>
                           <div class="col pt-3">
                             <p class="card-text pt-2">É ótimo saber que a dedicação da INNODEV seja trazer o melhor para cada um dos seus clientes, através dos serviços e atendimento fica cada vez mais claro que seu objetivo seja avançar e conquistar muito mais.</p>
@@ -353,85 +350,74 @@
                       <hr>
                       <div class="row px-2">
                         <div class="col-lg-2 col-3">
-                          <img src="./assets/image/perfil-comentario-2.webp" width="48" height="48" alt="Foto do cliente numero 1">
-                        </div>
-                        <div class="col">
-                          <h5 class="fw-bold my-0 fs-20px" style="color: #000;">Ryan Cordeiro</h5>
-                          <p class="fs-18px">Porto alegre - RS</p>
-                        </div>
-                      </div>
-      
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="row">
-                <div class="col-6">
-                  <div class="px-sm-2 px-0 coment" >
-                    <div class="card p-2">
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="col-12">
-                            <img src="./assets/icons/aspas-feedback.svg" width="52" height="34" class="icone de comentário" alt="...">
-                          </div>
-                          <div class="col pt-3">
-                            <p class="card-text pt-2">A equipe entregou um site incrível para o nosso negócio! Rápido, moderno e super funcional.</p>
-                          </div>
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="row px-2">
-                        <div class="col-lg-2 col-3">
                           <img src="./assets/image/perfil-comentario-3.webp" width="48" height="48" alt="Foto do cliente numero 1">
                         </div>
                         <div class="col">
-                          <h5 class="fw-bold my-0 fs-20px" style="color: #000;">Gabriel Michel</h5>
-                          <p class="fs-18px">Passo Fundo - MG</p>
+                          <h5 class="fw-bold my-0 fs-20px" style="color: #000;">Gabriel MIchel</h5>
+                          <p class="fs-18px">Pelotas - RS</p>
                         </div>
                       </div>
-      
-                    </div>
-                  </div>
-                </div>
 
-                <div class="col-6">
-                  <div class="px-sm-2 px-0 coment" >
-                    <div class="card p-2">
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="col-12">
-                            <img src="./assets/icons/aspas-feedback.svg" width="52" height="34" class="icone de comentário" alt="...">
-                          </div>
-                          <div class="col pt-3">
-                            <p class="card-text pt-2">O sistema que desenvolveram para nossa empresa otimizou nossos processos e aumentou a produtividade!</p>
-                          </div>
+                    </div>            
+                </div>
+            </div>
+
+            <div class="swiper-slide d-flex" >
+              <div class="px-sm-2 px-0 coment" >
+                  <div class="card p-2  rounded-5" >
+                  <div class="card-body">
+                      <div class="row">
+                        <div class="col-12">
+                          <img src="./assets/icons/aspas-feedback.svg" width="52" height="34" class="icone de comentário" alt="...">
+                        </div>
+                        <div class="col pt-3">
+                          <p class="card-text pt-2">É ótimo saber que a dedicação da INNODEV seja trazer o melhor para cada um dos seus clientes, através dos serviços e atendimento fica cada vez mais claro que seu objetivo seja avançar e conquistar muito mais.</p>
                         </div>
                       </div>
-                      <hr>
-                      <div class="row px-2">
-                        <div class="col-lg-2 col-3">
-                          <img src="./assets/image/perfil-comentario-4.webp" width="48" height="48" alt="Foto do cliente numero 1">
-                        </div>
-                        <div class="col">
-                          <h5 class="fw-bold my-0 fs-20px" style="color: #000;">Gabriel Yan</h5>
-                          <p class="fs-18px">Pelotas - MG</p>
-                        </div>
+                    </div>
+                    <hr>
+                    <div class="row px-2">
+                      <div class="col-lg-2 col-3">
+                        <img src="./assets/image/perfil-comentario-2.webp" width="48" height="48" alt="Foto do cliente numero 1">
                       </div>
-      
+                      <div class="col">
+                        <h5 class="fw-bold my-0 fs-20px" style="color: #000;">Ryan Cordeiro</h5>
+                        <p class="fs-18px">Porto Alegre - RS</p>
+                      </div>
                     </div>
                   </div>
-                </div>
+              </div>
+
+              <div class="px-sm-2 px-0 coment" >
+                  <div class="card p-2  rounded-5" >
+                  <div class="card-body">
+                      <div class="row">
+                        <div class="col-12">
+                          <img src="./assets/icons/aspas-feedback.svg" width="52" height="34" class="icone de comentário" alt="...">
+                        </div>
+                        <div class="col pt-3">
+                          <p class="card-text pt-2">O sistema que desenvolveram para nossa empresa otimizou nossos processos e aumentou a produtividade!</p>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row px-2">
+                      <div class="col-lg-2 col-3">
+                        <img src="./assets/image/perfil-comentario-4.webp" width="48" height="48" alt="Foto do cliente numero 1">
+                      </div>
+                      <div class="col">
+                        <h5 class="fw-bold my-0 fs-20px" style="color: #000;">Gabriel Yan</h5>
+                        <p class="fs-18px">Santa Maria - RS</p>
+                      </div>
+                    </div>
+
+                  </div>            
               </div>
             </div>
 
-            <div class="swiper-slide">
-              <div class="row">
-                <div class="col-6">
-                  <div class="px-sm-2 px-0 coment" >
-                    <div class="card p-2">
+            <div class="swiper-slide d-flex" >
+                <div class="px-sm-2 px-0 coment" >
+                    <div class="card p-2  rounded-5" >
                       <div class="card-body">
                         <div class="row">
                           <div class="col-12">
@@ -449,18 +435,15 @@
                         </div>
                         <div class="col">
                           <h5 class="fw-bold my-0 fs-20px" style="color: #000;">Gabriel Deluca</h5>
-                          <p class="fs-18px">Possos de calda - MG</p>
+                          <p class="fs-18px">São João da Boa vista - SP</p>
                         </div>
                       </div>
-      
-                    </div>
-                  </div>
+                  </div>    
                 </div>
 
-                <div class="col-6">
-                  <div class="px-sm-2 px-0 coment" >
-                    <div class="card p-2">
-                      <div class="card-body">
+                <div class="px-sm-2 px-0 coment" >
+                    <div class="card p-2  rounded-5" >
+                    <div class="card-body">
                         <div class="row">
                           <div class="col-12">
                             <img src="./assets/icons/aspas-feedback.svg" width="52" height="34" class="icone de comentário" alt="...">
@@ -476,51 +459,45 @@
                           <img src="./assets/image/perfil-comentario-6.webp" width="48" height="48" alt="Foto do cliente numero 1">
                         </div>
                         <div class="col">
-                          <h5 class="fw-bold my-0 fs-20px" style="color: #000;">Christian Barros</h5>
-                          <p class="fs-18px">Santa Maria - RS</p>
+                          <h5 class="fw-bold my-0 fs-20px" style="color: #000;">Christhian Barros</h5>
+                          <p class="fs-18px">Gravataí - RS</p>
                         </div>
                       </div>
-      
-                    </div>
-                  </div>
+
+                    </div>            
                 </div>
-              </div>
             </div>
 
-            <div class="swiper-slide ">
-              <div class="row">
-                <div class="col-6">
-                  <div class="px-sm-2 px-0 coment" >
-                    <div class="card p-2">
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="col-12">
-                            <img src="./assets/icons/aspas-feedback.svg" width="52" height="34" class="icone de comentário" alt="...">
-                          </div>
-                          <div class="col pt-3">
-                            <p class="card-text pt-2">Serviço de alta qualidade! Nosso aplicativo ficou exatamente como queríamos, com uma interface intuitiva e bonita.</p>
-                          </div>
+            <div class="swiper-slide d-flex" >
+              <div class="px-sm-2 px-0 coment" >
+                  <div class="card p-2  rounded-5" >
+                  <div class="card-body">
+                      <div class="row">
+                        <div class="col-12">
+                          <img src="./assets/icons/aspas-feedback.svg" width="52" height="34" class="icone de comentário" alt="...">
+                        </div>
+                        <div class="col pt-3">
+                          <p class="card-text pt-2">Serviço de alta qualidade! Nosso aplicativo ficou exatamente como queríamos, com uma interface intuitiva e bonita.</p>
                         </div>
                       </div>
-                      <hr>
-                      <div class="row px-2">
-                        <div class="col-lg-2 col-3">
-                          <img src="./assets/image/perfil-comentario-7.webp" width="48" height="48" alt="Foto do cliente numero 1">
-                        </div>
-                        <div class="col">
-                          <h5 class="fw-bold my-0 fs-20px" style="color: #000;">Camila Moreira</h5>
-                          <p class="fs-18px">Rio de Janeiro - RJ</p>
-                        </div>
-                      </div>
-      
                     </div>
-                  </div>
+                    <hr>
+                    <div class="row px-2">
+                      <div class="col-lg-2 col-3">
+                        <img src="./assets/image/perfil-comentario-7.webp" width="48" height="48" alt="Foto do cliente numero 1">
+                      </div>
+                      <div class="col">
+                        <h5 class="fw-bold my-0 fs-20px" style="color: #000;">Camila Moreira</h5>
+                        <p class="fs-18px">Rio de Janeiro - RJ</p>
+                      </div>
+                    </div>
+
+                  </div>   
                 </div>
 
-                <div class="col-6">
-                  <div class="px-sm-2 px-0 coment" >
-                    <div class="card p-2">
-                      <div class="card-body">
+                <div class="px-sm-2 px-0 coment" >
+                    <div class="card p-2  rounded-5" >
+                    <div class="card-body">
                         <div class="row">
                           <div class="col-12">
                             <img src="./assets/icons/aspas-feedback.svg" width="52" height="34" class="icone de comentário" alt="...">
@@ -540,292 +517,249 @@
                           <p class="fs-18px">São Luiz - MA</p>
                         </div>
                       </div>
-      
-                    </div>
-                  </div>
+
+                    </div>            
                 </div>
-              </div>
             </div>
-       
-           
-           
+
           </div>
-          <div class="swiper-pagination" style="bottom: 0px;"></div>
+          <!-- Paginação -->
+          <div class="swiper-pagination"></div>
         </div>
 
-        <!-- Slider main container -->
-        <div class="swiper mySwiperP d-md-none">
-          <div class="swiper-wrapper d-flex">
+        <!-- swiper mobile -->
+        <div class="swiper mySwiper d-sm-none">
+          <div class="swiper-wrapper">
 
-
-            <div class="swiper-slide">
-              <div class="row">
-                <div class="col-12">
-                  <div class="px-sm-2 px-0 coment" >
-                    <div class="card p-2">
-                      <div class="card-body d-flex align-items-center">
-                        <div class="row">
-                          <div class="col-12">
-                            <img src="./assets/icons/aspas-feedback.svg" width="52" height="34" class="icone de comentário" alt="...">
-                          </div>
-                          <div class="col pt-3">
-                            <p class="card-text pt-2">Gostaria de expressar meu profundo agradecimento ao INNODEV pelo
-                              atendimento
-                              excepcional. Sua cordialidade, atenção aos detalhes e prontidão em atender fizeram toda a
-                              diferença.</p>
-                          </div>
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="row px-2">
-                        <div class="col-2 pe-0">
-                          <img src="./assets/image/perfil-comentario-1.webp" width="48" height="48" alt="Foto do cliente numero 1">
-                        </div>
-                        <div class="col ps-0">
-                          <h5 class="fw-bold my-0 fs-20px" style="color: #000;">Lucas Bastos</h5>
-                          <p class="fs-18px">Possos de calda - MG</p>
-                        </div>
-                      </div>
-      
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="row">
-            <div class="col-12">
+            <div class="swiper-slide d-flex" >
               <div class="px-sm-2 px-0 coment" >
-                <div class="card p-2">
-                  <div class="card-body d-flex align-items-center">
-                    <div class="row">
-                      <div class="col-12">
-                        <img src="./assets/icons/aspas-feedback.svg" width="52" height="34" class="icone de comentário" alt="icone aspas comentário">
-                      </div>
-                      <div class="col pt-3">
-                        <p class="card-text pt-2">É ótimo saber que a dedicação da INNODEV seja trazer o melhor para cada um dos seus clientes, através dos serviços e atendimento fica cada vez mais claro que seu objetivo seja avançar e conquistar muito mais.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="row px-2">
-                    <div class="col-2">
-                      <img src="./assets/image/perfil-comentario-2.webp" width="48" height="48" alt="Foto do cliente numero 1">
-                    </div>
-                    <div class="col ps-0">
-                      <h5 class="fw-bold my-0 fs-20px" style="color: #000;">Ryan Cordeiro</h5>
-                      <p class="fs-18px">Porto alegre - RS</p>
-                    </div>
-                  </div>
-  
-                </div>
-              </div>
-            </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="row">
-                <div class="col-12">
-                  <div class="px-sm-2 px-0 coment" >
-                    <div class="card p-2">
-                      <div class="card-body d-flex align-items-center">
-                        <div class="row">
-                          <div class="col-12">
-                            <img src="./assets/icons/aspas-feedback.svg" width="52" height="34" class="icone de comentário" alt="...">
-                          </div>
-                          <div class="col pt-3">
-                            <p class="card-text pt-2">A equipe entregou um site incrível para o nosso negócio! Rápido, moderno e super funcional.</p>
-                          </div>
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="row px-2">
-                        <div class="col-2">
-                          <img src="./assets/image/perfil-comentario-3.webp" width="48" height="48" alt="Foto do cliente numero 1">
-                        </div>
-                        <div class="col ps-0">
-                          <h5 class="fw-bold my-0 fs-20px" style="color: #000;">Gabriel Michel</h5>
-                          <p class="fs-18px">Passo Fundo - MG</p>
-                        </div>
-                      </div>
-      
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <div class="row">
-            <div class="col-12">
-              <div class="px-sm-2 px-0 coment" >
-                <div class="card p-2">
-                  <div class="card-body d-flex align-items-center">
+                <div class="card p-2  rounded-5" >
+                <div class="card-body">
                     <div class="row">
                       <div class="col-12">
                         <img src="./assets/icons/aspas-feedback.svg" width="52" height="34" class="icone de comentário" alt="...">
                       </div>
                       <div class="col pt-3">
-                        <p class="card-text pt-2">O sistema que desenvolveram para nossa empresa otimizou nossos processos e aumentou a produtividade!</p>
+                        <p class="card-text pt-2">Gostaria de expressar meu profundo agradecimento ao INNODEV pelo
+                          atendimento
+                          excepcional. Sua cordialidade, atenção aos detalhes e prontidão em atender fizeram toda a
+                          diferença.</p>
                       </div>
                     </div>
                   </div>
                   <hr>
                   <div class="row px-2">
-                    <div class="col-2">
-                      <img src="./assets/image/perfil-comentario-4.webp" width="48" height="48" alt="Foto do cliente numero 1">
+                    <div class="col-lg-2 col-3">
+                      <img src="./assets/image/perfil-comentario-1.webp" width="48" height="48" alt="Foto do cliente numero 1">
                     </div>
-                    <div class="col ps-0">
-                      <h5 class="fw-bold my-0 fs-20px" style="color: #000;">Gabriel Yan</h5>
-                      <p class="fs-18px">Pelotas - MG</p>
-                    </div>
-                  </div>
-  
-                </div>
-              </div>
-            </div>
-              </div>
-            </div>
- 
-            <div class="swiper-slide ">
-              <div class="row">
-                <div class="col-12">
-                  <div class="px-sm-2 px-0 coment" >
-                    <div class="card p-2">
-                      <div class="card-body d-flex align-items-center">
-                        <div class="row">
-                          <div class="col-12">
-                            <img src="./assets/icons/aspas-feedback.svg" width="52" height="34" class="icone de comentário" alt="...">
-                          </div>
-                          <div class="col pt-3">
-                            <p class="card-text pt-2">Desde que contratamos a Innodev, nosso site está mais profissional e eficiente. Valeu muito a pena!</p>
-                          </div>
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="row px-2">
-                        <div class="col-2">
-                          <img src="./assets/image/perfil-comentario-5.webp" width="48" height="48" alt="Foto do cliente numero 1">
-                        </div>
-                        <div class="col ps-0">
-                          <h5 class="fw-bold my-0 fs-20px" style="color: #000;">Gabriel Deluca</h5>
-                          <p class="fs-18px">Possos de calda - MG</p>
-                        </div>
-                      </div>
-      
+                    <div class="col">
+                      <h5 class="fw-bold my-0 fs-20px" style="color: #000;">Lucas Bastos</h5>
+                      <p class="fs-18px">Passo Fundo - MG</p>
                     </div>
                   </div>
-                </div>
 
+                </div>   
               </div>
             </div>
 
-            <div class="swiper-slide">
-              <div class="row">
-                <div class="col-12">
-                  <div class="px-sm-2 px-0 coment" >
-                    <div class="card p-2">
-                      <div class="card-body d-flex align-items-center">
-                        <div class="row">
-                          <div class="col-12">
-                            <img src="./assets/icons/aspas-feedback.svg" width="52" height="34" class="icone de comentário" alt="...">
-                          </div>
-                          <div class="col pt-3">
-                            <p class="card-text pt-2">A atenção aos detalhes e a personalização do software fizeram toda a diferença para nossa empresa!</p>
-                          </div>
+            <div class="swiper-slide d-flex">
+              <div class="px-sm-2 px-0 coment" >
+                  <div class="card p-2  rounded-5" >
+                  <div class="card-body">
+                      <div class="row">
+                        <div class="col-12">
+                          <img src="./assets/icons/aspas-feedback.svg" width="52" height="34" class="icone de comentário" alt="...">
+                        </div>
+                        <div class="col pt-3">
+                          <p class="card-text pt-2">É ótimo saber que a dedicação da INNODEV seja trazer o melhor para cada um dos seus clientes, através dos serviços e atendimento fica cada vez mais claro que seu objetivo seja avançar e conquistar muito mais.</p>
                         </div>
                       </div>
-                      <hr>
-                      <div class="row px-2">
-                        <div class="col-2">
-                          <img src="./assets/image/perfil-comentario-6.webp" width="48" height="48" alt="Foto do cliente numero 1">
-                        </div>
-                        <div class="col ps-0">
-                          <h5 class="fw-bold my-0 fs-20px" style="color: #000;">Christian Barros</h5>
-                          <p class="fs-18px">Santa Maria - RS</p>
-                        </div>
-                      </div>
-      
                     </div>
-                  </div>
-                </div>
+                    <hr>
+                    <div class="row px-2">
+                      <div class="col-lg-2 col-3">
+                        <img src="./assets/image/perfil-comentario-3.webp" width="48" height="48" alt="Foto do cliente numero 1">
+                      </div>
+                      <div class="col">
+                        <h5 class="fw-bold my-0 fs-20px" style="color: #000;">Gabriel MIchel</h5>
+                        <p class="fs-18px">Pelotas - RS</p>
+                      </div>
+                    </div>
+
+                  </div>            
               </div>
             </div>
 
-            <div class="swiper-slide ">
-              <div class="row">
-                <div class="col--12">
-                  <div class="px-sm-2 px-0 coment" >
-                    <div class="card p-2">
-                      <div class="card-body d-flex align-items-center">
-                        <div class="row">
-                          <div class="col-12">
-                            <img src="./assets/icons/aspas-feedback.svg" width="52" height="34" class="icone de comentário" alt="...">
-                          </div>
-                          <div class="col pt-3">
-                            <p class="card-text pt-2">Serviço de alta qualidade! Nosso aplicativo ficou exatamente como queríamos, com uma interface intuitiva e bonita.</p>
-                          </div>
+            <div class="swiper-slide d-flex" >
+              <div class="px-sm-2 px-0 coment" >
+                  <div class="card p-2  rounded-5" >
+                  <div class="card-body">
+                      <div class="row">
+                        <div class="col-12">
+                          <img src="./assets/icons/aspas-feedback.svg" width="52" height="34" class="icone de comentário" alt="...">
+                        </div>
+                        <div class="col pt-3">
+                          <p class="card-text pt-2">É ótimo saber que a dedicação da INNODEV seja trazer o melhor para cada um dos seus clientes, através dos serviços e atendimento fica cada vez mais claro que seu objetivo seja avançar e conquistar muito mais.</p>
                         </div>
                       </div>
-                      <hr>
-                      <div class="row px-2">
-                        <div class="col-2">
-                          <img src="./assets/image/perfil-comentario-7.webp" width="48" height="48" alt="Foto do cliente numero 1">
-                        </div>
-                        <div class="col ps-0">
-                          <h5 class="fw-bold my-0 fs-20px" style="color: #000;">Camila Moreira</h5>
-                          <p class="fs-18px">Rio de Janeiro - RJ</p>
-                        </div>
+                    </div>
+                    <hr>
+                    <div class="row px-2">
+                      <div class="col-lg-2 col-3">
+                        <img src="./assets/image/perfil-comentario-2.webp" width="48" height="48" alt="Foto do cliente numero 1">
                       </div>
-      
+                      <div class="col">
+                        <h5 class="fw-bold my-0 fs-20px" style="color: #000;">Ryan Cordeiro</h5>
+                        <p class="fs-18px">Porto Alegre - RS</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-
               </div>
             </div>
 
-            <div class="swiper-slide">
-              <div class="row">
-                <div class="col--12">
-                  <div class="px-sm-2 px-0 coment" >
-                    <div class="card p-2">
-                      <div class="card-body d-flex align-items-center">
-                        <div class="row">
-                          <div class="col-12">
-                            <img src="./assets/icons/aspas-feedback.svg" width="52" height="34" class="icone de comentário" alt="...">
-                          </div>
-                          <div class="col pt-3 ">
-                            <p class="card-text pt-2 ">Muito satisfeito com a plataforma que desenvolveram para nós. Agilidade e profissionalismo nota 10!</p>
-                          </div>
+            <div class="swiper-slide d-flex">
+              <div class="px-sm-2 px-0 coment" >
+                  <div class="card p-2  rounded-5" >
+                  <div class="card-body">
+                      <div class="row">
+                        <div class="col-12">
+                          <img src="./assets/icons/aspas-feedback.svg" width="52" height="34" class="icone de comentário" alt="...">
+                        </div>
+                        <div class="col pt-3">
+                          <p class="card-text pt-2">O sistema que desenvolveram para nossa empresa otimizou nossos processos e aumentou a produtividade!</p>
                         </div>
                       </div>
-                      <hr>
-                      <div class="row px-2">
-                        <div class="col-2">
-                          <img src="./assets/image/perfil-comentario-8.webp" width="48" height="48" alt="Foto do cliente numero 1">
-                        </div>
-                        <div class="col ps-0">
-                          <h5 class="fw-bold my-0 fs-20px" style="color: #000;">Yuri Raffic</h5>
-                          <p class="fs-18px">São Luiz - MA</p>
-                        </div>
-                      </div>
-      
                     </div>
-                  </div>
-                </div>                    
+                    <hr>
+                    <div class="row px-2">
+                      <div class="col-lg-2 col-3">
+                        <img src="./assets/image/perfil-comentario-4.webp" width="48" height="48" alt="Foto do cliente numero 1">
+                      </div>
+                      <div class="col">
+                        <h5 class="fw-bold my-0 fs-20px" style="color: #000;">Gabriel Yan</h5>
+                        <p class="fs-18px">Santa Maria - RS</p>
+                      </div>
+                    </div>
+
+                  </div>            
               </div>
             </div>
-       
-           
-           
+
+            <div class="swiper-slide d-flex" >
+              <div class="px-sm-2 px-0 coment" >
+                  <div class="card p-2  rounded-5" >
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-12">
+                          <img src="./assets/icons/aspas-feedback.svg" width="52" height="34" class="icone de comentário" alt="...">
+                        </div>
+                        <div class="col pt-3">
+                          <p class="card-text pt-2">Desde que contratamos a Innodev, nosso site está mais profissional e eficiente. Valeu muito a pena!</p>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row px-2">
+                      <div class="col-lg-2 col-3">
+                        <img src="./assets/image/perfil-comentario-5.webp" width="48" height="48" alt="Foto do cliente numero 1">
+                      </div>
+                      <div class="col">
+                        <h5 class="fw-bold my-0 fs-20px" style="color: #000;">Gabriel Deluca</h5>
+                        <p class="fs-18px">São João da Boa vista - SP</p>
+                      </div>
+                    </div>
+                </div>    
+              </div>
+            </div>
+
+            <div class="swiper-slide d-flex">
+              <div class="px-sm-2 px-0 coment" >
+                  <div class="card p-2  rounded-5" >
+                  <div class="card-body">
+                      <div class="row">
+                        <div class="col-12">
+                          <img src="./assets/icons/aspas-feedback.svg" width="52" height="34" class="icone de comentário" alt="...">
+                        </div>
+                        <div class="col pt-3">
+                          <p class="card-text pt-2">A atenção aos detalhes e a personalização do software fizeram toda a diferença para nossa empresa!</p>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row px-2">
+                      <div class="col-lg-2 col-3">
+                        <img src="./assets/image/perfil-comentario-6.webp" width="48" height="48" alt="Foto do cliente numero 1">
+                      </div>
+                      <div class="col">
+                        <h5 class="fw-bold my-0 fs-20px" style="color: #000;">Christhian Barros</h5>
+                        <p class="fs-18px">Gravataí - RS</p>
+                      </div>
+                    </div>
+
+                  </div>            
+              </div>
+            </div>
+
+            <div class="swiper-slide d-flex" >
+              <div class="px-sm-2 px-0 coment" >
+                  <div class="card p-2  rounded-5" >
+                  <div class="card-body">
+                      <div class="row">
+                        <div class="col-12">
+                          <img src="./assets/icons/aspas-feedback.svg" width="52" height="34" class="icone de comentário" alt="...">
+                        </div>
+                        <div class="col pt-3">
+                          <p class="card-text pt-2">Serviço de alta qualidade! Nosso aplicativo ficou exatamente como queríamos, com uma interface intuitiva e bonita.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row px-2">
+                      <div class="col-lg-2 col-3">
+                        <img src="./assets/image/perfil-comentario-7.webp" width="48" height="48" alt="Foto do cliente numero 1">
+                      </div>
+                      <div class="col">
+                        <h5 class="fw-bold my-0 fs-20px" style="color: #000;">Camila Moreira</h5>
+                        <p class="fs-18px">Rio de Janeiro - RJ</p>
+                      </div>
+                    </div>
+
+                  </div>   
+              </div>
+            </div>
+
+            <div class="swiper-slide d-flex">
+              <div class="px-sm-2 px-0 coment" >
+                  <div class="card p-2  rounded-5" >
+                  <div class="card-body">
+                      <div class="row">
+                        <div class="col-12">
+                          <img src="./assets/icons/aspas-feedback.svg" width="52" height="34" class="icone de comentário" alt="...">
+                        </div>
+                        <div class="col pt-3">
+                          <p class="card-text pt-2">Muito satisfeito com a plataforma que desenvolveram para nós. Agilidade e profissionalismo nota 10!</p>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row px-2">
+                      <div class="col-lg-2 col-3">
+                        <img src="./assets/image/perfil-comentario-8.webp" width="48" height="48" alt="Foto do cliente numero 1">
+                      </div>
+                      <div class="col">
+                        <h5 class="fw-bold my-0 fs-20px" style="color: #000;">Yuri Raffic</h5>
+                        <p class="fs-18px">São Luiz - MA</p>
+                      </div>
+                    </div>
+
+                  </div>            
+              </div>
+            </div>
           </div>
-          <div class="swiper-pagination" style="bottom: 0px;"></div>
-        </div>
 
+          <!-- Paginação -->
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
     </section>
 
@@ -863,10 +797,6 @@
         </div>
       </div>
     </section>
-
-
-
-
   </main>
 
   <footer class="gradiente-azul-bg" id="contatos">
@@ -943,23 +873,11 @@
   </div>
 </div>
 
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./assets/js/script.js"></script>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-
-    
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./assets/js/script.js"></script>
-
-  
 </body>
 
 </html>
