@@ -124,7 +124,7 @@ const swiper = new Swiper('.mySwiper', {
   spaceBetween: 20,
   grabCursor: true,
   centeredSlides: true,
-  loop: true,
+  loop: false,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
